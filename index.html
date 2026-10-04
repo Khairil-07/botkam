@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f6ef" />
+    <meta name="description" content="Kue rumahan yang dibuat segar setiap hari. Temukan cake, roti, dan pastry favoritmu di Roti & Rona." />
+    <title>Roti & Rona — Manisnya Hari Ini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">Dibuat segar setiap pagi · Gratis ongkir untuk pesanan di atas Rp200.000</div>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="Roti dan Rona, beranda">
+        <span class="brand-mark" aria-hidden="true">r</span>
+        <span class="brand-name">roti <i>&</i> rona</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#menu">Menu kami</a>
+        <a href="#cerita">Cerita kami</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <button class="cart-trigger" id="open-cart" type="button" aria-label="Buka keranjang">
+        <span class="bag-icon" aria-hidden="true">▱</span>
+        <span class="cart-label">Keranjang</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> DARI DAPUR KECIL KAMI</p>
+          <h1>Hari biasa,<br />rasa <em>istimewa.</em></h1>
+          <p class="hero-description">Kue yang dibuat dengan hati, bahan pilihan, dan sedikit alasan untuk merayakan hari ini.</p>
+          <a class="primary-link" href="#menu">Jelajahi menu <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span><span>Disukai lebih dari 2.000 pecinta manis</span></div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1300&q=85" alt="Kue cokelat berlapis dengan hiasan buah segar" />
+          <div class="photo-caption"><span>Favorit minggu ini</span><strong>Berry velvet cake</strong></div>
+          <div class="round-stamp" aria-label="Dibuat dengan cinta"><span>BAIK • MANIS • HANGAT •</span><b>♡</b></div>
+        </div>
+        <div class="hero-index"><span>01</span><span class="index-line"></span><span>03</span></div>
+      </section>
+
+      <section class="promise-strip" aria-label="Keunggulan Roti dan Rona">
+        <div><span class="promise-icon">01</span><p><strong>Selalu fresh</strong><br />Dibuat setiap hari</p></div>
+        <div><span class="promise-icon">02</span><p><strong>Bahan pilihan</strong><br />Rasa yang terasa bedanya</p></div>
+        <div><span class="promise-icon">03</span><p><strong>Dikirim dengan hati</strong><br />Aman sampai depan pintu</p></div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> PILIHAN DARI OVEN</p><h2>Yang bikin <em>hari cerah.</em></h2></div>
+          <p class="section-aside">Dibuat dalam batch kecil.<br />Bisa jadi hari ini kehabisan.</p>
+        </div>
+        <div class="menu-controls">
+          <div class="category-tabs" role="group" aria-label="Filter kategori">
+            <button class="category-button active" data-category="Semua" type="button">Semua</button>
+            <button class="category-button" data-category="Cake" type="button">Cake</button>
+            <button class="category-button" data-category="Roti" type="button">Roti</button>
+            <button class="category-button" data-category="Pastry" type="button">Pastry</button>
+          </div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Cari yang kamu suka" aria-label="Cari produk" /></label>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="no-results" id="no-results" hidden>Belum ada yang cocok. Coba kata pencarian lain, ya.</p>
+      </section>
+
+      <section class="story-section" id="cerita">
+        <div class="story-image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1100&q=85" alt="Pastry hangat yang baru selesai dipanggang" loading="lazy" /></div>
+        <div class="story-copy"><p class="eyebrow"><span></span> CERITA DARI DAPUR</p><h2>Rasa rumahan,<br /><em>tanpa buru-buru.</em></h2><p>Kami percaya hal-hal baik perlu waktu. Adonan diistirahatkan, krim dibuat sendiri, lalu semuanya dipanggang sedikit demi sedikit agar sampai kepadamu dalam keadaan terbaik.</p><a href="#kontak" class="text-link">Kenalan lebih dekat <span aria-hidden="true">→</span></a><span class="story-doodle" aria-hidden="true">baked<br />with care</span></div>
+      </section>
+
+      <section class="closing-note" id="kontak">
+        <p class="eyebrow"><span></span> ADA ACARA SPESIAL?</p>
+        <h2>Manisnya bisa<br /><em>dibikin khusus.</em></h2>
+        <a class="primary-link" href="https://wa.me/6281234567890?text=Halo%20Roti%20%26%20Rona%2C%20saya%20ingin%20pesan%20kue%20custom." target="_blank" rel="noreferrer">Pesan kue custom <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#beranda">roti <i>&</i> rona</a><span>© 2026 Roti & Rona. Dibuat sepenuh hati.</span><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a></footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="drawer-header"><div><p class="eyebrow">PESANANMU</p><h2 id="cart-title">Keranjang <em>manis.</em></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Tutup keranjang">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span aria-hidden="true">♡</span><p>Keranjangmu masih kosong.</p><button class="text-link continue-shopping" type="button">Lihat menu <span aria-hidden="true">→</span></button></div>
+      <div class="cart-footer" id="cart-footer" hidden><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">Rp0</strong></div><p>Ongkir dihitung saat konfirmasi pesanan.</p><a class="checkout-button" id="checkout-link" href="#" target="_blank" rel="noreferrer">Pesan via WhatsApp <span aria-hidden="true">↗</span></a></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite">Ditambahkan ke keranjang</div>
+  </body>
+</html>
